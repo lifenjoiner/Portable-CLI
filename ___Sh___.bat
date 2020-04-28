@@ -7,4 +7,4 @@ pushd %~dp0
 Call __init__ 2>nul
 path %_path_%%path%
 set _path_=
-start %ComSpec% /%_M_% "Title %USERNAME%'s shell %% %~dp0&color 06&set _M_=&%*"
+start "%USERNAME%'s shell %% %~dp0" %ComSpec% /%_M_% "color 06&set _M_=&%*"
