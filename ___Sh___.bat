@@ -6,7 +6,7 @@ Call __init__ 2>nul
 path %_path_%%path%
 set _path_=
 if "%~1"=="" (
-	start "%USERNAME%'s shell %% %~dp0" %ComSpec% /k "color 06"
+	start "%USERNAME%'s shell %% %~dp0" %ComSpec% /t:06 /k
 ) else (
-	start "%USERNAME%'s shell %% %~dp0" %ComSpec% /c "color 06 &"%*
+	start "%USERNAME%'s shell %% %~dp0" %ComSpec% /t:06 /c %*
 )
